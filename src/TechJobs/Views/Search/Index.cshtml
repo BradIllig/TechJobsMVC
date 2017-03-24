@@ -1,6 +1,6 @@
 ﻿<h1>@ViewBag.title</h1>
 
-<form action="/Search/Results">
+<form name="seachForm" id="searchForm" action="/Search/Results">
     <h2>Search by:</h2>
 
     <p>
@@ -18,8 +18,8 @@
     </p>
 
     <p>
-        <label for="searchTerm">Keyword:</label>
-        <input type="text" name="searchTerm" id="searchTerm" />
+            <label for="searchTerm">Keyword:</label>
+            <input type="text" name="searchTerm" id="searchTerm" runat="server" />      
     </p>
 
     <input type="submit" value="Search" />
